@@ -30,7 +30,7 @@ export default function Home() {
               shadow-mapSize-width={1024}
               shadow-mapSize-height={1024}
             />
-            <OrbitControls autoRotate autoRotateSpeed={0.3}  />
+            <OrbitControls autoRotate autoRotateSpeed={0.6}  />
           </Canvas>
         </Suspense>
       </div>
