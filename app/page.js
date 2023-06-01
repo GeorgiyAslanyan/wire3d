@@ -17,6 +17,7 @@ export default function Home() {
       <div className="fixed top-[20px] left-[20px] backdrop-blur-xl rounded-lg border border-gray-400 bg-zinc-950 bg-opacity-70 p-4 z-[100]">
         <p className="text-white">Скорость вращения:</p>
         <div className="flex flex-wrap gap-2 my-3">
+        <button onClick={() => setRotateSpeed(0)} className={rotateSpeed == 0 ? activeBtn : btn }>0</button>
         <button onClick={() => setRotateSpeed(0.2)} className={rotateSpeed == 0.2 ? activeBtn : btn }>1</button>
         <button onClick={() => setRotateSpeed(0.4)} className={rotateSpeed == 0.4 ? activeBtn : btn }>2</button>
         <button onClick={() => setRotateSpeed(0.6)} className={rotateSpeed == 0.6 ? activeBtn : btn }>3</button>
