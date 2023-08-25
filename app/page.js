@@ -10,7 +10,7 @@ export default function Home() {
   const [rotateSpeed, setRotateSpeed] = useState(0.4)
   const [activeBg, setActiveBg] = useState(2)
   const [model, setModel] = useState(1)
-  const [pixelation, setPixelatin] = useState(3)
+  const [pixelation, setPixelation] = useState(3)
 
   const activeBtn = 'p-3 rounded-lg text-white bg-blue-500 w-10 h-10 leading-[1]'
   const btn = 'p-3 rounded-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white duration-300 w-10 h-10 leading-[1]'
@@ -38,9 +38,9 @@ export default function Home() {
         </div>
         <p className="text-white pt-3">Пикселизация:</p>
         <div className="flex flex-wrap gap-2 mt-3">
-        <button onClick={() => setPixelatin(2)} className={pixelation === 2 ? activeBtn : btn }>1</button>
-        <button onClick={() => setPixelatin(3)} className={pixelation === 3 ? activeBtn : btn }>2</button>
-        <button onClick={() => setPixelatin(5)} className={pixelation === 5 ? activeBtn : btn }>3</button>
+        <button onClick={() => setPixelation(2)} className={pixelation === 2 ? activeBtn : btn }>1</button>
+        <button onClick={() => setPixelation(3)} className={pixelation === 3 ? activeBtn : btn }>2</button>
+        <button onClick={() => setPixelation(5)} className={pixelation === 5 ? activeBtn : btn }>3</button>
         </div>
       </div>
       <div className="w-full h-[100vh] z-50 relative">
@@ -54,7 +54,7 @@ export default function Home() {
                 receiveShadow
                 rotation={[-Math.PI / 2, 0, 0]}
                 position={[0, -1.9, 0]}>
-                <planeBufferGeometry args={[100, 100]} attach={"geometry"} />
+                {/* <planeBufferGeometry args={[100, 100]} attach={"geometry"} /> */}
                 <shadowMaterial transparent opacity={0.2} />
               </mesh>
             </group>
